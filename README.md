@@ -20,7 +20,7 @@ Website for best project of films.
 
 ## Preview :desktop_computer:
 
-![White-prince](https://github.com/White-prince/Vedmenko.production/blob/main/taskmanager/static/images/pr.jpg?raw=true)
+![White-prince]()
 
 ## Installation :gear:
 
