@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{% block title %}{% endblock %}</title>
+        <link rel="stylesheet" href="{%static 'css/style.css'%}">
+        <link rel="shortcut icon" href="{%static 'img/favicon.png'%}" type="image/png">
+    </head>
+<body>
+    <nav>
+        <ul>
+            <li><a class="lin" href="{% url 'homepage' %}"><span>Work</span></a></li>
+            <li><a class="lin" href="{% url 'about' %}"><span>About</span></a></li>
+            <li><a class="lin" href="{% url 'blog' %}"><span>Blog</span></a></li>
+            <li><a class="lin" href="{% url 'contact' %}"><span>Contact</span></a></li>
+        </ul>
+    </nav>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>
