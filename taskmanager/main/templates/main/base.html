@@ -18,13 +18,21 @@
       </div>
     <nav>
         <ul>
-            <li><a class="lin" href="{% url 'homepage' %}"><span>Work</span></a></li>
-            <li><a class="lin" href="{% url 'about' %}"><span>About</span></a></li>
-            <li><a class="lin" href="{% url 'blog' %}"><span>Blog</span></a></li>
-            <li><a class="lin" href="{% url 'contact' %}"><span>Contact</span></a></li>
+            <li><a class="lin" href="{% url 'homepage' %}">Work</a>
+                <ul>
+                    <li><a class="link" href="{% url 'vedmenkoproduction' %}">Vedmenko production</a></li>
+                    <li><a class="link" href="{% url 'vedmenkotelegrambot' %}">Telegram bot assistant</a></li>
+                    <li><a class="link" href="{% url 'vedmenkovkbot' %}">Vk bot assistant</a></li>
+                    <li><a class="link" href="{% url 'fearlessvikingz' %}">Fearless vikingz</a></li>
+                    <li><a class="link" href="{% url 'smartassistant' %}">Vk bot assistant</a></li>
+                </ul>
+            </li>
+            <li><a class="lin" href="{% url 'about' %}">About</a></li>
+            <li><a class="lin" href="{% url 'blog' %}">Blog</a></li>
+            <li><a class="lin" href="{% url 'contact' %}">Contact</a></li>
+            <a href="{% url 'homepage' %}"><img class="logo" src="{% static 'img/favicon.png' %}" alt="White-prince_logo"></a>
+            <a href="https://github.com/White-prince"><img class="git" src="{% static 'img/logogit.png' %}" alt="gotlogo"></a>
         </ul>
-        <a href="{% url 'homepage' %}"><img class="logo" src="{% static 'img/favicon.png' %}" alt="White-prince_logo"></a>
-        <a href="https://github.com/White-prince"><img class="git" src="{% static 'img/logogit.png' %}" alt="gotlogo"></a>
     </nav>
     {% block content %}
     {% endblock %}

@@ -4,5 +4,61 @@
 White prince | Homepage |
 {% endblock %}
 {% block content %}
-    
+<div class="container">
+    <div class="main-text">
+        <h1 class="main-text-name">Hey. I m White prince.<br>A Developer.</h1>
+        <p class="main-text-dis">I am a simple programmer who writes projects for the soul.<br> I make custom projects for companies.</p>
+    </div>
+    <div class="logo-big">
+        <img src="{% static 'img/favicon.png' %}" alt="logo">
+    </div>
+</div>
+<div class="container-work">
+    <a class="lin" href="{% url 'vedmenkoproduction' %}">
+        <div class="container-work-object">
+            <p class="container-work-object-about">Website</p>
+            <p class="container-work-object-text">Vedmenko production</p>
+            <img class="container-work-img" src="{% static 'img/pr.png' %}" alt="Preview">
+        </div>
+    </a>
+</div>
+<div class="container-work-new">
+    <a class="lin" href="{% url 'vedmenkotelegrambot' %}">
+        <div class="container-work-object">
+            <p class="container-work-object-about">Bot</p>
+            <p class="container-work-object-text">Telegram bot assistant</p>
+            <img class="container-work-img" src="{% static 'img/pr.png' %}" alt="Preview">
+        </div>
+    </a>
+</div>
+<div class="container-work-new">
+    <a class="lin" href="{% url 'vedmenkovkbot' %}">
+        <div class="container-work-object">
+            <p class="container-work-object-about">Bot</p>
+            <p class="container-work-object-text">Vk bot assistant</p>
+            <img class="container-work-img" src="{% static 'img/pr.png' %}" alt="Preview">
+        </div>
+    </a>
+</div>
+<div class="container-work-new">
+    <a class="lin" href="{% url 'fearlessvikingz' %}">
+        <div class="container-work-object">
+            <p class="container-work-object-about">Website</p>
+            <p class="container-work-object-text">Fearless vikingz</p>
+            <img class="container-work-img" src="{% static 'img/Preview.jpg' %}" alt="Preview">
+        </div>
+    </a>
+</div>
+<div class="container-work-new">
+    <a class="lin" href="{% url 'smartassistant' %}">
+        <div class="container-work-object">
+            <p class="container-work-object-about">Assistant</p>
+            <p class="container-work-object-text">Smart voice assistant</p>
+            <img class="container-work-img" src="{% static 'img/pr.png' %}" alt="Preview">
+        </div>
+    </a>
+</div>
+<footer>
+    <p>&copy; 2022. All Rights Reserved. Design by <a class="lin" href="https://github.com/White-prince">White-prince</a></p>
+</footer>
 {% endblock %}
