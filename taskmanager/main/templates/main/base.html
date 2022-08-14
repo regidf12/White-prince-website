@@ -5,10 +5,17 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>{% block title %}{% endblock %}</title>
-        <link rel="stylesheet" href="{%static 'css/style.css'%}">
-        <link rel="shortcut icon" href="{%static 'img/favicon.png'%}" type="image/png">
+        <link rel="stylesheet" href="{%static 'css/style.css' %}">
+        <link href="{% static 'img/favicon.png' %}" rel="shortcut icon" type="image/png" />
+        <script src="{% static 'js/preloader.js' %}"></script>
     </head>
 <body>
+    <div class="preloader">
+        <div class="preloader__row">
+          <div class="preloader__item"></div>
+          <div class="preloader__item"></div>
+        </div>
+      </div>
     <nav>
         <ul>
             <li><a class="lin" href="{% url 'homepage' %}"><span>Work</span></a></li>
@@ -16,6 +23,8 @@
             <li><a class="lin" href="{% url 'blog' %}"><span>Blog</span></a></li>
             <li><a class="lin" href="{% url 'contact' %}"><span>Contact</span></a></li>
         </ul>
+        <a href="{% url 'homepage' %}"><img class="logo" src="{% static 'img/favicon.png' %}" alt="White-prince_logo"></a>
+        <a href="https://github.com/White-prince"><img class="git" src="{% static 'img/logogit.png' %}" alt="gotlogo"></a>
     </nav>
     {% block content %}
     {% endblock %}
