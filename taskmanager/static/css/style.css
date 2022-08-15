@@ -227,7 +227,7 @@ nav ul ul li {
   margin-top: 20px;
   transition: 0.5s;
 }
-.container-work-object img:hover{
+.container-work-object:hover img{
   transition: 0.5s;
   transform: translate(0,-10px);
 }
@@ -236,6 +236,7 @@ nav ul ul li {
   display: inline-block;
   box-shadow: 0 14px 30px rgba(0,0,0,5), 0 10px 10px rgba(0,0,0,0.25);
   transform: translate(0,-5px);
+
 }
 .container-work-object-about{
   padding-top: 30px;
@@ -250,7 +251,6 @@ nav ul ul li {
   font-size: 30px;
 }
 .container-work-img{
-  float: left;
   display: flex;
   align-items: center;
   justify-content: center;
