@@ -1,0 +1,18 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block title %}
+White prince | Blog |
+{% endblock %}
+{% block content-main %}
+     <div class="container-blog">
+      <h1 class="geniral_text">My Personal Blog</h1>
+       {% block content %}
+         {% for i in object_list %}
+            <div class="article">
+              <h3 class="object">{{ i.title }}</h3>
+              <p class="text">{{ i.body }}</p>
+            </div>
+         {% endfor %}
+        {% endblock content %}
+     </div>
+{% endblock %}
