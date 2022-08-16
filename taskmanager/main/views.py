@@ -15,10 +15,6 @@ def about(request):
     return render(request, 'main/about.html')
 
 
-def blog(request):
-    return render(request, 'main/blog.html')
-
-
 def vedmenkoproduction(request):
     return render(request, 'main/vedmenko.html')
 
@@ -56,3 +52,7 @@ def fearlessvikingz(request):
 
 def smartassistant(request):
     return render(request, 'main/smartassistant.html')
+
+class ArticleListView(ListView):
+    model = Article
+    template_name = 'article_list.html'
