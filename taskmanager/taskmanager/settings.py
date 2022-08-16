@@ -35,7 +35,7 @@ ROOT_URLCONF = 'taskmanager.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -91,9 +91,9 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 RECIPIENTS_EMAIL = ['']
 DEFAULT_FROM_EMAIL = ''
 
-EMAIL_BACKEND = ''
-EMAIL_HOST = ''
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.mailgun.org'
 EMAIL_HOST_USER = ''
 EMAIL_HOST_PASSWORD = ''
-EMAIL_PORT = 
-EMAIL_USE_TLS = 
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True

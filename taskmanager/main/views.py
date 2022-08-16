@@ -3,6 +3,8 @@ from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render, redirect
 from .forms import ContactForm
 from taskmanager.settings import RECIPIENTS_EMAIL, DEFAULT_FROM_EMAIL
+from django.views.generic import ListView
+from . models import Article
 
 
 def homepage(request):
@@ -15,6 +17,10 @@ def about(request):
 
 def blog(request):
     return render(request, 'main/blog.html')
+
+
+def vedmenkoproduction(request):
+    return render(request, 'main/vedmenko.html')
 
 
 def contact(request):
@@ -34,9 +40,6 @@ def contact(request):
     else:
         return HttpResponse('Неверный запрос.')
     return render(request, 'main/contact.html', {'form': form})
-
-def vedmenkoproduction(request):
-    return render(request, 'main/vedmenko.html')
 
 
 def vedmenkotelegrambot(request):
