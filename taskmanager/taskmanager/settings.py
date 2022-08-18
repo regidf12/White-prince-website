@@ -4,7 +4,7 @@ from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = '*@)#&%)YTBSGFV(&TSX^!#@T$GYUHB(V)SXZ*&#Q@$Y!@#B F)(*DXSAZ&VFC'
+
 
 DEBUG = True
 
@@ -88,12 +88,3 @@ STATICFILES_DIRS = [
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-RECIPIENTS_EMAIL = ['whiteprinceexecute@gmail.com']
-DEFAULT_FROM_EMAIL = 'alekseypribylov2006@gmail.com'
-
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.mailgun.org'
-EMAIL_HOST_USER = 'postmaster@sandbox78a590315f504270921cd452cc9d51c2.mailgun.org'
-EMAIL_HOST_PASSWORD = '43703f2dddba9d0ce1fa569b368e199c-4dd50799-9bdf5765'
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True

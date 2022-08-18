@@ -490,6 +490,19 @@ About
   box-shadow: 0 14px 30px rgba(0,0,0,5), 0 10px 10px rgba(0,0,0,0.25);
   transform: translate(0,-5px);
 }
+.text-in-ditails{
+  line-height: 40px;
+  font-size: 24px;
+  text-align: center;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+.text-in-ditails-title{
+  animation-duration: 2.5s;
+  animation-name: paint;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
 /*Footer*/
 footer{
   margin-top: 20px;
