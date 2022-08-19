@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>{% block title %}{% endblock %}</title>
         <link rel="stylesheet" href="{%static 'css/style.css' %}">
-        <link href="{% static 'img/favicon.png' %}" rel="shortcut icon" type="image/png" />
+        <link href="{% static 'img/Logo_white.png' %}" rel="shortcut icon" type="image/png" />
         <script src="{% static 'js/preloader.js' %}"></script>
     </head>
 <body>
@@ -30,7 +30,7 @@
             <li><a class="lin" href="{% url 'about' %}">About</a></li>
             <li><a class="lin" href="{% url 'blog' %}">Blog</a></li>
             <li><a class="lin" href="{% url 'contact' %}">Contact</a></li>
-            <a href="{% url 'homepage' %}"><img class="logo" src="{% static 'img/favicon.png' %}" alt="White-prince_logo"></a>
+            <a href="{% url 'homepage' %}"><img class="logo" src="{% static 'img/Logo_white.png' %}" alt="White-prince_logo"></a>
             <a href="https://github.com/White-prince"><img class="git" src="{% static 'img/logogit.png' %}" alt="gotlogo"></a>
         </ul>
     </nav>

@@ -277,8 +277,17 @@ body, html{
     padding-left: 400px;
     padding-right: 400px;
     width: 100%;
-    height: 700px;
     margin-bottom: 100px;
+    border-radius: 20px;
+  }
+  .container-work-img-in-disc-goriz{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    padding-left: 200px;
+    padding-right: 200px;
+    width: 70%;
     border-radius: 20px;
   }
   .example-shadow-3 {
@@ -488,10 +497,10 @@ body, html{
     margin-bottom: 100px;
   }
   .icons{
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin-top: -200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .icons img{
     display: inline;
@@ -601,9 +610,9 @@ nav{
   background-color: #111111;
   padding-left: 150px;
   padding-right: 150px;
-  margin-top: -50px;
 }
 nav ul{
+  margin-top: 10px;
   list-style: none;
 	position: relative;
 }
@@ -663,22 +672,21 @@ nav ul ul li {
   color: #5265f6;
 }
 .git{
-  position: relative;
-  top: 11px;
+  top: 10px;
   left: 74%;
   width: 40px;
   height: 40px;
 }
 .git:hover{
   transition: 0.3s;
-  opacity: 50%; 
+  opacity: 50%;
 }
 .logo{
   position: relative;
-  top: 30px;
+  top: 20px;
   left: 34%;
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   transform: translate(-50%,0);
 }
 .container{
@@ -985,12 +993,6 @@ About
   margin-top: -100px;
   margin-bottom: 100px;
 }
-.icons{
-  position: absolute;
-  top: 92%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 .icons img{
   display: inline;
   width: 65px;
@@ -1024,7 +1026,16 @@ About
   padding-left: 200px;
   padding-right: 200px;
   width: 100%;
-  height: 700px;
+  border-radius: 20px;
+}
+.container-work-img-in-disc-goriz{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  padding-left: 200px;
+  padding-right: 200px;
+  width: 70%;
   border-radius: 20px;
 }
 /*Footer*/
@@ -1047,10 +1058,10 @@ footer{
     right: 100px;
   }
   .container-work-object img{ 
-    height: 80%;
+    height: 70%;
   }
   .container-work-object{
-    height: 600px;
+    height: 700px;
   }
   .prename{
     margin-left: 50px;
@@ -1058,18 +1069,30 @@ footer{
   .img-about{
     margin-left: 50px;
   }
-  .icons{
-    top: 95%;
+  .container-work-img{
+    padding-left: 100px;
+    padding-right: 100px;
   }
   .container-work-img-in-disc{
     padding-left: 50px;
     padding-right: 50px;
+  }
+  .container-work-img-in-disc-goriz {
+    width: 100%;
   }
   .container-blog{
     width: 100%;
     padding-top: 300px;
     padding-left: 0px;
     padding-right: 0px;
+  }
+  .main-text-name{
+    padding-left: 50px;
+    font-size: 52px;
+  }
+  .main-text-dis{
+    padding-left: 50px;
+    font-size: 18px;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -1084,13 +1107,16 @@ footer{
     left: 50%;
   }
   .logo-big{
-    right: 0px;
+    width: 400px;
+    height: 400px;
+    right: 1px;
+    top: 28%;
   }
   .container-work-object img{ 
-    height: 80%;
+    height: 70%;
   }
   .container-work-object{
-    height: 600px;
+    height: 700px;
   }
   .container-work {
     padding-left: 50px;
@@ -1107,22 +1133,26 @@ footer{
     margin-left: 150px;
     margin-right: 200px;
   }
-  .icons{
-    top: 95%;
-  }
   .container-work-img-in-disc{
     width: 100%;
     height: 100%;
     padding-left: 0px;
     padding-right: 0px;
   }
+  .container-work-img-in-disc-goriz {
+    width: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
   .main-text-name{
     padding-left: 0px;
+    margin-left: -90px;
     font-size: 52px;
   }
   .main-text-dis{
     padding-left: 0px;
     font-size: 18px;
+    margin-left: -90px;
   }
   .img-text{
     display: block;
@@ -1138,10 +1168,10 @@ footer{
     padding-right: 0px;
   }
   .container-work-img{
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 0px;
+    padding-right: 0px;
     width: 100%;
-    height: 100%;
+    height: 40%;
   }
   .text-in-ditails{
     padding-left: 0px;
@@ -1160,23 +1190,25 @@ footer{
     visibility: hidden;
   }
   .logo-big{
-    right: 135px;
+    right: 180px;
     top: 50px;
   }
   .main-text-name{
-    padding-top: 100px;
+    padding-top: 200px;
     padding-left: 0px;
     font-size: 52px;
     text-align: center;
+    margin-left: 0px;
   }
   .main-text-dis{
     padding-left: 0px;
     font-size: 18px;
     text-align: center;
+    margin-left: 0px;
   }
   .container{
     width: 100%;
-    padding-top: 300px;
+    padding-top: 200px;
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -1186,12 +1218,12 @@ footer{
     width: 100%;
     height: 100%;
   }
+  .container-work {
+    padding-top: 150px;
+  }
   .img-about{
     margin-left: 170px;
-    margin-right: 200px;
-  }
-  .icons img{
-    margin: 20px;
+    margin-right: 180px;
   }
   .container-blog{
     width: 100%;
@@ -1202,13 +1234,23 @@ footer{
   nav ul li:hover > ul {
     visibility: hidden;
   }
+  .container-work-img-in-disc-goriz {
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+}
 }
 @media screen and (max-width: 425px) {
   .logo-big{
-    width: 400px;
-    height: 400px;
+    width: 390px;
+    height: 390px;
     right: 15px;
     top: 10px;
+  }
+  .main-text-name{
+    padding-top: 130px;
+    font-size: 32px;
+    line-height: 40px;
   }
   .container-work-img{
     visibility: hidden;
@@ -1250,8 +1292,7 @@ footer{
     font-size: 40px;
   }
   .icons{
-    top: 80%;
-    left: 50%;
+    margin-top: -150px;
   }
   .icons img{
     width: 50px;
@@ -1264,56 +1305,76 @@ footer{
 }
 @media screen and (max-width: 375px) {
   nav{
-    height: 60px;
-    margin-top: -20px;
+    height: 70px;
   }
   .logo-big{
     width: 350px;
     height: 350px;
-    right: 15px;
+    right: 10px;
     top: 10px;
   }
   .img-about{
     width: 350px;
     height: 550px;
   }
-  .icons{
-    top: 85%;
-    left: 50%;
-  }
   .icons img{
     width: 50px;
     height: 50px;
-    margin: 1px;
+    margin: 5px;
   }
   .main-text-name{
-    line-height: 80px;
+    line-height: 60px;
   }
   .container-work-object{
     height: 150px;
     padding-left: 5px;
     padding-right: 5px;
   }
+  .text{
+    font-size: 18px;
+    text-align: left;
+  }
+  .object {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .geniral_text {
+    margin-top: -200px;
+    font-size: 72px;
+    text-align: center;
+}
 }
 @media screen and (max-width: 320px) {
   .logo-big{
     width: 300px;
     height: 300px;
-    right: 15px;
+    right: 10px;
     top: 50px;
   }
   .img-about{
     width: 300px;
     height: 500px;
   }
-  .icons{
-    top: 85%;
-    left: 50%;
-    width: 170px;
-  }
   .icons img{
     width: 50px;
     height: 50px;
     margin-left: 1px;
   }
+  .main-text-name{
+    line-height: 60px;
+    padding-top: 100px;
+  }
+  .text{
+    font-size: 16px;
+    text-align: left;
+  }
+  .object {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .geniral_text {
+    margin-top: -200px;
+    font-size: 72px;
+    text-align: center;
+}
 }
