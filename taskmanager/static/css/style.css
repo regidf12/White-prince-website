@@ -14,7 +14,7 @@ body, html{
     color: #fff;
     background-color: #111111;
 }
-@media screen and (max-width: 2560px) {
+@media screen and (max-width: 2560px) { 
   .preloader {
     position: fixed;
     left: 0;
@@ -95,7 +95,7 @@ body, html{
     position: relative;
   }
   nav ul li{
-    margin-top: 32px;
+    margin-top: 55px;
     padding-bottom: 1px;
     padding-right: 25px;
     display:inline-block;
@@ -125,7 +125,7 @@ body, html{
   }
   nav ul li:hover > ul {
     display:inherit;
-    margin: 45px 0px -60px -80px;
+    margin: 40px 0px -60px -80px;
     transition: 5s;
   }
   nav ul ul li {
@@ -150,23 +150,28 @@ body, html{
     color: #5265f6;
   }
   .git{
-    position: relative;
-    top: 15px;
-    left: 70%;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
   }
   .git:hover{
     transition: 0.3s;
     opacity: 50%; 
   }
+  .lin-logo-git{
+    display: flex;
+    align-items: rigth;
+    justify-content: right;
+    margin-top: -75px;
+  }
   .logo{
-    position: relative;
-    top: 30px;
-    left: 30%;
     width: 90px;
     height: 90px;
-    transform: translate(-50%,0);
+  }
+  .lin-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -70px;
   }
   .container{
     width: 100%;
@@ -444,11 +449,11 @@ body, html{
     width: 50%;
   }
   .object{
-    font-size: 32px;
+    font-size: 48px;
     margin-bottom: 10px;
   }
   .text{
-    font-size: 24px;
+    font-size: 32px;
     text-align: left;
   }
   /*content*/
@@ -460,7 +465,7 @@ body, html{
     background-color: #212121;
     border-radius: 20px;
     margin-bottom: 30px;
-    font-size: 48px;
+    font-size: 64px;
     color: #fff;
     display: flex;
     padding-left: 15px;
@@ -473,9 +478,9 @@ body, html{
   .button{
     font-family: Vaaksy_Round;
     background-color: #212121;
-    font-size: 60px;
+    font-size: 72px;
     border-radius: 20px;
-    margin-top: 50px;
+    margin-top: 100px;
     color: #fff;
     display: flex;
     padding-left: 10px;
@@ -491,21 +496,21 @@ body, html{
     transform: translate(0,-5px);
   }
   .container-nain-text{
-    font-size: 52px;
+    font-size: 72px;
     text-align: center;
     margin-top: -100px;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
   }
   .icons{
-    margin-top: -200px;
+    margin-top: -100px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
   .icons img{
     display: inline;
-    width: 65px;
-    height: 65px;
+    width: 80px;
+    height: 80px;
     margin: 30px;
     transition: 0.5s;
   }
@@ -529,7 +534,7 @@ body, html{
   }
   /*Footer*/
   footer{
-    margin-top: 20px;
+    margin-top: 50px;
     padding-bottom: 1px;
     width: 100%;
     text-align: center;
@@ -537,70 +542,6 @@ body, html{
   }
 }
 @media screen and (max-width: 1920px) {
-.preloader {
-  position: fixed;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(#5265f6, #111111);
-  z-index: 1001;
-  }
-.preloader__row {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  width: 70px;
-  height: 70px;
-  margin-top: -35px;
-  margin-left: -35px;
-  text-align: center;
-  animation: preloader-rotate 2s infinite linear;
-  }
-  
-.preloader__item {
-  position: absolute;
-  display: inline-block;
-  top: 0;
-  background-color: #fff;
-  border-radius: 100%;
-  width: 35px;
-  height: 35px;
-  animation: preloader-bounce 2s infinite ease-in-out;
-  }
-  
-.preloader__item:last-child {
-  top: auto;
-  bottom: 0;
-  animation-delay: -1s;
-  }
-  
-  @keyframes preloader-rotate {
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  
-  @keyframes preloader-bounce {
-  
-    0%,
-    100% {
-      transform: scale(0);
-    }
-  
-    50% {
-      transform: scale(1);
-    }
-  }
-  
-.loaded_hiding .preloader {
-  transition: 0.3s opacity;
-  opacity: 0;
-}
-  
-.loaded .preloader {
-  display: none;
-}
 nav{
   z-index: 100;
   width: 100%;
@@ -617,7 +558,7 @@ nav ul{
 	position: relative;
 }
 nav ul li{
-  margin-top: 32px;
+  margin-top: 45px;
   padding-bottom: 1px;
   padding-right: 25px;
   display:inline-block;
@@ -672,8 +613,6 @@ nav ul ul li {
   color: #5265f6;
 }
 .git{
-  top: 10px;
-  left: 74%;
   width: 40px;
   height: 40px;
 }
@@ -682,12 +621,14 @@ nav ul ul li {
   opacity: 50%;
 }
 .logo{
-  position: relative;
-  top: 20px;
-  left: 34%;
   width: 60px;
   height: 60px;
-  transform: translate(-50%,0);
+}
+.lin-logo-git{
+  margin-top: -53px;
+}
+.lin-logo{
+  margin-top: -47px;
 }
 .container{
   width: 100%;
@@ -1094,17 +1035,17 @@ footer{
     padding-left: 50px;
     font-size: 18px;
   }
+  .lin-logo-git{
+    margin-top: -52px;
+  }
+  .lin-logo{
+    margin-top: -47px;
+  }
 }
 @media screen and (max-width: 1024px) {
   nav{
     padding-left: 50px;
     padding-right: 50px;
-  }
-  .logo{
-    left: 20%;
-  }
-  .git{
-    left: 50%;
   }
   .logo-big{
     width: 400px;
@@ -1183,11 +1124,11 @@ footer{
     padding-left: 10px;
     padding-right: 10px;
   }
-  .logo{
-    visibility: hidden;
+  .lin-logo-git{
+    margin-top: -52px;
   }
-  .git{
-    visibility: hidden;
+  .lin-logo{
+    margin-top: -47px;
   }
   .logo-big{
     right: 180px;
@@ -1247,6 +1188,12 @@ footer{
     right: 15px;
     top: 10px;
   }
+  .lin-logo{
+    visibility: hidden;
+  }
+  .lin-logo-git{
+    visibility: hidden;
+  }
   .main-text-name{
     padding-top: 130px;
     font-size: 32px;
@@ -1302,6 +1249,11 @@ footer{
   footer{
     margin-top: 70px;
   }
+  nav ul li{
+    padding-top: 10px;
+    padding-right: 25px;
+    padding-left: 25px;
+  }
 }
 @media screen and (max-width: 375px) {
   nav{
@@ -1343,6 +1295,11 @@ footer{
     font-size: 72px;
     text-align: center;
 }
+nav ul li{
+  margin-top: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
 }
 @media screen and (max-width: 320px) {
   .logo-big{
@@ -1376,5 +1333,10 @@ footer{
     margin-top: -200px;
     font-size: 72px;
     text-align: center;
+}
+nav ul li{
+  margin-top: 20px;
+  padding-right: 15px;
+  padding-left: 10px;
 }
 }
