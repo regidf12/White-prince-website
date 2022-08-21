@@ -20,7 +20,7 @@ Website for best project of films.
 
 ## Preview :desktop_computer:
 
-![White-prince]()
+![White-prince](https://ibb.co/6NKFwRR)
 
 ## Installation :gear:
 
