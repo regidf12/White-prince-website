@@ -1,5 +1,3 @@
-# Welcome to Regidf
-
 # White-prince website :globe_with_meridians:
 
 Website for best project of films.
